@@ -1,6 +1,8 @@
 # Vagrant::Boxinfo
 
-Vagrant plugin for displaying box info in vagrant self-hosted environments.
+Vagrant plugin for displaying custom box info in vagrant self-hosted environments
+via metadata. (more on Vagrant metadata file
+[here](http://docs.vagrantup.com/v2/boxes/format.html)).
 
 ## Installation
 
@@ -18,7 +20,8 @@ $ vagrant boxinfo <url or box_name>
 
 ## Example
 
-Imagine you host vagrant boxes which are used for LAMP development. Different box versions can have different versions of MySQL, PHP, etc.
+Imagine you host vagrant boxes which are used for LAMP development. Different box
+versions can have different versions of MySQL, PHP, etc.
 
 Suppose you have `metadata.json` with following content on your server:
 
@@ -78,7 +81,8 @@ Description: Vagrant box for LAMP development based on Ubuntu 14.04
     downloaded: true
 ```
 
-If you currently don't have downloaded any version of *lampbox*, you have to pass full url of `metadata.json` to *boxinfo* command.
+If you currently don't have downloaded any version of *lampbox*, you have to pass
+full url of `metadata.json` to *boxinfo* command.
 
 ## Contributing
 
