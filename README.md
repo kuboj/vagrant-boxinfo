@@ -1,4 +1,4 @@
-# Vagrant::Boxinfo
+# Vagrant-boxinfo
 
 Vagrant plugin for displaying custom box info in vagrant self-hosted environments
 via metadata. (more on Vagrant metadata file
