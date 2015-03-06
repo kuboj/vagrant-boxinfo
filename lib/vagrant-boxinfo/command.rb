@@ -55,7 +55,7 @@ module Vagrant
         @env.ui.info("Description: #{remote_boxes_metadata[:description]}")
         @env.ui.info("\n")
 
-        remote_boxes_metadata[:versions].each do |box|
+        remote_boxes_metadata[:versions].sort_by { |b| b[:version] }.reverse_each do |box|
           @env.ui.info("#{box[:version]}")
           box.each do |k, v|
             next if %i(providers version).include?(k)
